@@ -1,0 +1,83 @@
+
+.glowing {
+    color: rgb(140, 60, 252);;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #070138;
+    
+
+}
+
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #000000;
+}
+nav ul {
+    margin-left: 60px;
+}
+nav ul li {
+    display: inline-grid;
+    padding: 20px;
+}
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.4s ease 0s;
+}
+nav ul li a:hover {
+    color: rgb(140, 60, 252);
+    transform: scale(1.5);
+}
+
+#how {
+    
+    color: rgb(140, 60, 252);
+    font-size: 30px;
+    position: center;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    box-shadow: 4px 4px 4px rgba(194, 3, 247, 0.4);
+    transition: transform 0.3s linear;
+  }
+  a:hover #img1, a:focus #img1 {
+    transform: rotate(-3deg) scale(1.5);
+  } 
+
+
+
+  @media screen and (max-width: 1024px) and (min-width: 769px) {
+
+    body{
+        background-color: hwb(199 76% 6%);
+    }
+  }
+
+
+
+  @media  screen and (max-width: 768px)and (min-width: 320px)  {
+
+    .glowing{
+        display: none;
+    }
+    #how {
+        display: none;    
+           
+        }
+    
+        #img1{
+            display: none;
+        }
+
+        body {
+            background-color: #f2da06;
+        }
+}
